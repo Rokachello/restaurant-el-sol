@@ -1,17 +1,18 @@
 
-const container = document.getElementById("content")
 
-let initialHeader = document.createElement("h1")
+const container = document.createElement("div")
+
+let centerDiv = document.createElement("div")
+centerDiv.classList.add("center")
 let initialImage = document.createElement("img")
 let initialText = document.createElement("p")
+centerDiv.appendChild(initialImage)
+centerDiv.appendChild(initialText)
 
-initialHeader.innerHTML = "EL SOL - COCKTAILS AND BEERSSSS"
 initialImage.src = "../src/images/beachfront-bar.jpg"
-initialText.innerHTML = "Visit us on the hidden beach"
+initialText.innerHTML = "Visit us on the sunny beach"
 
-container.appendChild(initialHeader)
-container.appendChild(initialImage)
-container.appendChild(initialText)
+container.append(centerDiv)
 
 export {container}
 
