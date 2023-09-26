@@ -28,16 +28,25 @@ homeBtn.addEventListener("click", () => {
     content.removeChild(currentContent)
     currentContent = firstPage
     content.appendChild(currentContent)
+    homeBtn.classList.add("selected")
+    menuBtn.classList.remove("selected")
+    infoBtn.classList.remove("selected")
 })
 
 menuBtn.addEventListener("click", () => {
     content.removeChild(currentContent)
     currentContent = menuPage
     content.appendChild(currentContent)
+    menuBtn.classList.add("selected")
+    homeBtn.classList.remove("selected")
+    infoBtn.classList.remove("selected")
 })
 
 infoBtn.addEventListener("click", () => {
     content.removeChild(currentContent)
     currentContent = infoPage
     content.appendChild(currentContent)
+    infoBtn.classList.add("selected")
+    homeBtn.classList.remove("selected")
+    menuBtn.classList.remove("selected")
 })

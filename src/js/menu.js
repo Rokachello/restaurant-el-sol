@@ -21,6 +21,8 @@ cocktailsList.forEach(element => {
     menuItem.appendChild(name)
     menuItem.appendChild(description)
     menuItem.appendChild(price)
+    price.classList.add("price")
+    menuItem.classList.add("menu-item")
     cocktailsMenu.appendChild(menuItem)
 
 });
@@ -42,16 +44,24 @@ beersList.forEach(element => {
     menuItem.appendChild(description)
     menuItem.appendChild(price)
     beersMenu.appendChild(menuItem)
+    price.classList.add("price")
+    menuItem.classList.add("menu-item")
 
 });
 
 
+let cocktailBanner = document.createElement("img")
+cocktailBanner.src = "../src/images/cocktails.jpg"
+cocktailBanner.classList.add("banner")
+let beerBanner = document.createElement("img")
+beerBanner.src = "../src/images/beer.png"
+beerBanner.classList.add("banner")
 
-
-
+container.appendChild(cocktailBanner)
 container.appendChild(cocktails)
 container.appendChild(cocktailsMenu)
 container.appendChild(document.createElement("br"))
+container.appendChild(beerBanner)
 container.appendChild(beers)
 container.appendChild(beersMenu)
 
