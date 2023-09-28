@@ -16,8 +16,8 @@ let prevImage = document.createElement("img")
 let nextImage = document.createElement("img")
 prevImage.classList.add("arrow")
 nextImage.classList.add("arrow")
-prevImage.src = "../src/images/left-arrow.png"
-nextImage.src = "../src/images/arrow-right.png"
+prevImage.src = "/src/images/left-arrow.png"
+nextImage.src = "/src/images/arrow-right.pn"
 
 imageNav.appendChild(prevImage)
 imageNav.appendChild(initialImage)
