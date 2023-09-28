@@ -29,15 +29,15 @@ let initialText = document.createElement("p")
 centerDiv.appendChild(imageNav)
 centerDiv.appendChild(initialText)
 
-
+//123
 // photos used
-let imageOne = "../src/images/beachfront-bar.jpg"
-let imageTwo = "../src/images/Tayrona.jpg"
-let imageThree = "../src/images/tayrona2.jpg"
-let imageFour = "../src/images/bar1.jpg"
-let imageFive = "../src/images/bar2.jpeg"
-let imageSix = "../src/images/bar3.jpg"
-let imageSeven ="../src/images/bar4.jpg"
+let imageOne = "../dist/images/beachfront-bar.jpg"
+let imageTwo = "./dist/images/Tayrona.jpg"
+let imageThree = "/dist/images/tayrona2.jpg"
+let imageFour = "dist/images/bar1.jpg"
+let imageFive = "/images/bar2.jpeg"
+let imageSix = "./images/bar3.jpg"
+let imageSeven ="images/bar4.jpg"
 let images = [imageOne,imageTwo,imageThree, imageFour, imageFive, imageSix, imageSeven]
 
 
